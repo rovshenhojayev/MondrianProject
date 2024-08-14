@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .paint-container{
+      height: 748px;
+      width: 748px;
+      display: grid;
+      background-color: #000;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+    }
+
+    .grid-container-1{
+      background-color: #E72F24;
+      grid-area: 1 /1/2 /2;
+    }
+
+    .grid-container-2{
+      grid-column: span 3;
+      background-color: #F0F1EC;
+    }
+
+    .grid-container-3{
+      grid-row: span 2;
+      background-color: #F0F1EC;
+    }
+
+    .grid-container-4{
+      grid-area: 2 / 2 / 4 / 4;
+      background-color: #F0F1EC;
+    }
+
+    .grid-container-5{
+      background-color: #004592;
+      border-bottom: 10px solid black;
+    }
+
+    .grid-container-6{
+      grid-row: span 2;
+      background-color: #F0F1EC;
+    }
+
+    .grid-container-7{
+      background-color: #F0F1EC;
+    }
+
+    .grid-container-8{
+      background-color: #F9D01E;
+    }
+
+    .grid-container-9{
+      background-color : 
+      #232629;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="paint-container flexxy">
+    <div class="grid-container-1"></div>
+    <div class="grid-container-2"></div>
+    <div class="grid-container-3"></div>
+    <div class="grid-container-4"></div>
+    <div class="grid-container-5"></div>
+    <div class="grid-container-6"></div>
+    <div class="grid-container-7"></div>
+    <div class="grid-container-8"></div>
+    <div class="grid-container-9"></div>
+  </div>
+</body>
+
+</html>
